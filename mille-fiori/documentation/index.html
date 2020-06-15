@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>Mille Fiori Documentation Template</title>
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+  <style type="text/css" media="screen">
+    p, table, hr, .box { margin-bottom:25px; }
+    .box p { margin-bottom:10px; }
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <h3 class="center alt">&ldquo;Mille Fiori&rdquo; Documentation by &ldquo;ChristineThemer&rdquo; v1.0</h3>
+
+    <hr>
+
+    <h1 class="center">&ldquo;Mille Fiori - Creative Floristic Template&rdquo;</h1>
+
+    <div class="borderTop">
+      <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top">
+          <strong>
+          Created: 13/07/2017<br>
+          By: Christine<br>
+          Email: <a href="mailto:christine.themer@gmail.com">christine.themer@gmail.com</a>
+          </strong>
+        </p>
+      </div><!-- end div .span-6 -->
+
+      <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/ChristineThemer">here</a>. Thanks so much!</p>
+      </div>
+    </div><!-- end div .borderTop -->
+
+    <hr>
+
+    <h2 id="toc" class="alt">Table of Contents</h2>
+    <ol class="alpha">
+      <li><a href="#versions">Template Versions</a></li>
+      <li><a href="#htmlStructure">HTML Structure</a></li>
+      <li><a href="#cssFiles">CSS Files and Structure</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#gulp">Gulp Tool</a></li>
+      <li><a href="#customization">Customization</a></li>
+    <hr>
+    <h3 id="versions"><strong>A) Template Versions</strong> - <a href="#toc">top</a></h3>
+    <p>The template comes in four different versions: light, video, blue and dark.</p>
+      <ul>
+        <li><b>Light Version</b> - this is the basic version of the template. It has a header slider, active fade In animation with the dominant color: pink. Files related to it are index.html and style.css. Less command for compile css is "gulp less"</li>
+        <li><b>Video Version</b> - this is the template with a video background instead of slider. Also the video is displayed for quote and contact sections. It has an intro text section on top of the video and active fade In animation with dominant color: pink. Files related to it are index-video.html and style-video.css. Less command for compile css is "gulp less-video"</li>
+        <li><b>Blue Version</b> - this is the basic version with blue accents and no animation fade effect and it has a header slider. Files related to it are index-blue.html and style-blue.css. Less command for compile css is "gulp less-blue"</li>
+        <li><b>Dark Version</b> - this is dark version of the template. It has header slider with intro text section, active fade In animation with dominant color: orange and dark background. Files related to it are index-dark.html and style-dark.css. Less command for compile css is "gulp less-dark"</li>
+      </ul>
+
+    <h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+    <p>This theme is created as a one-page site. It has a beautiful, clean and airy design. The template was created using inovative and powerfull technology as HTML5/CSS3 based on bootstrap (css framework) which makes development and maintanance very easy and intuitive. It supports all types of devices (desktops, tablets and smartphones) with several optimizations for each size.</p>
+        <h3> The whole project is divided into big sections. Most of them have a name placed on the top-right corner as a headline.</h3>
+
+      <p>1. At the very top we have the "header" section which consists of navigation, slider/video-background and optionally "intro-text".</p>
+        <ul>
+          <li>The navigation has a fixed position at the very top of the page that you can see even when you scroll down. It is a nice transition effect as well.</li>
+          <li>The slider consists of 4 slides with a background image attached to each of them in CSS. Please check 'carusel1' style. When you will replace the images just place them in the "img/carousel" folder and change the style in CSS file.</li>
+          <li>In case of video-background, the slider section is deleted.</li>
+        </ul>
+        <p>2. After "header" we have a big list of sections which are simple and self-explanatory. I will describe them in brief where necessary:</p>
+        <ul>
+          <li><b>Latest Project</b> - it's a nice section which could represent your latest project and "find more" opens a modal window (first portfolio)</li>
+          <li><b>Our Story</b> - here we have a simple text section devided into two columns</li>
+          <li><b>Our Team</b> - the place for a short description and presentation of your team</li>
+          <li><b>Quote</b> - a quote arrea with nice parallax effect background</li>
+          <li><b>Services</b> - it's a section with good structure and great fade in effect</li>
+          <li><b>Newsletter</b> - a basic newsletter form with an integrated validation</li>
+          <li><b>Portfolio</b> - it's the more complex section with a hover effect and a pop-up modal which opens on click. This modals can be found by their identifier ("portfolioModal1", "portfolioModal2", etc.). There are also filter options which will group the elements and filter them using animation</li>
+          <li><b>Partners</b> - a very simple section for displaying multiple logos or images</li>
+          <li><b>Testimonials</b> - consists of a carousel which displays 2 elements at once</li>
+          <li><b>Contact</b> - it's a form based section with validations</li>
+          <li><b>Footer</b> - contains the address and social media links with s nice hover effect</li>
+        </ul>
+         <p>Whole HTML is realized in bootstrap style which makes it flexible, responsive and very easy to manipulate.</p>
+    <hr>
+
+    <h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+      <p>I'm using twitter bootstrap css framework as a base. As a result we have 2 files (<b>bootstrap.min.css</b> and <b>style.min.css</b>)</p>
+      <ul>
+        <li>bootstrap.min.css - is a base library file</li>
+        <li>style.min.css - is a minified version of style.css file where we have all our custom styles. CSS is optimized and minified with <b>gulp</b> tool, which here is used to optimize/clean/minify css. I will describe it in a separate section related to "gulp tool".</li>
+      </ul>
+
+    <hr>
+
+    <h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+    <p>This template includes some Javascript scripts for some animation and form validations as well as a tool to send emails to server-side mail service script.</p>
+
+    <ol>
+      <li>jQuery (jQuery is a Javascript library that greatly reduces the amount of code that you must write)</li>
+      <li>Bootstrap Javascript file as part of framework.</li>
+      <li>JQuery Easing - plugin for smooth using of navigation.</li>
+      <li>JQuery viewportchecker - plugin for fade in animation effect(In case you don't need animation you can delete it).</li>
+      <li>JQuery bcSwipe - plugin for easy navigate throw testimonials and header slider</li>
+      <li>JQuery imagesloaded - plugin for portfolio section</li>
+      <li>JQuery masonry - plugin for portfolio section</li>
+      <li>jqBootstrapValidation - A plugin for automating validation on Twitter Bootstrap formatted forms(subscribe and contact).</li>
+      <li>main - theme related scripts.</li>
+    </ol>
+
+    <hr>
+
+    <h3 id="gulp"><strong>E) Gulp Tool</strong> - <a href="#toc">top</a></h3>
+    <p>Gulp is a tool used to make some repeatable tasks. To run gulp, first you need to have nodejs and npm installed and only 2 files: package.json and gulp.js
+      <br>In order to run this automated tasks first install all dependencies with "npm install" and after run gulp tasks ("gulp uncss", "gulp minify-css"), both in root of the project from command line. Please check "gulp" documentation for more details.
+      <br>Gulp is used for the following automated tasks:</p>
+      <ul>
+        <li>less - compile less file and combine with variables and create final css file. There are custom comands for each version (light template: less, dark template: less-dark, video template: less-video, blue template: less-blue)</li>
+        <li>uncss - cleaning of unused css. It is set to default css of light version. In case you want to minify other version please change css file name in uncss section gulpfile.js</li>
+        <li>compatibility - makes sure that the theme will looks good on all suported browsers.</li>
+        <li>minify - prepare the css for production by compresing the file.</li>
+      </ul>
+
+        <h3 id="customization"><strong>F) Customization</strong> - <a href="#toc">top</a></h3>
+
+        <div class="user-html">
+          <p>This template can be customized in the easiest way possible. Usually you need to search through the whole project in order to change a font, color, backgorund-image. For an easier customization we created a configurations file "/less/variables.less". This file contains only the options for fonts, colors and background images which are set in CSS. Here you can change all the colors/fonts/images according to your needs and requirements. All the values are self-explained and grouped in an intuitive way. If you want to change text and information, you can do this in the HTML file.</p>
+          <p>Note: After each CSS variables update (in case you update just HTML changes should be visible) you need to run gulp commands (in project root) to make changes visible:</p>
+          <ul>
+            <li>"gulp less" - compiles CSS changes and applies variables</li>
+            <li>"gulp minify-css" - creates production-ready versions of CSS. You have to run this command if you use the minified CSS version (style.min.css)</li>
+          </ul>
+          <p>Note: In case you don't want to use gulp just change the CSS file which is imported in HTML to style.css and make all the changes in this file.</p>
+
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+    <p class="append-bottom alt large"><strong>Christine Themer</strong></p>
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+    <hr class="space">
+  </div>
+</body>
+</html>
