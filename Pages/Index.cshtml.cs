@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -13,11 +12,15 @@ namespace FloweryWaw.Pages
 {
     public class IndexModel : PageModel
     {
+        [BindProperty]
         public string Name { get; set; }
+        [BindProperty]
         public string Email { get; set; }
+        [BindProperty]
         public string Message { get; set; }
+        [BindProperty]
         public string Subject { get; set; }
-
+        
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -32,12 +35,10 @@ namespace FloweryWaw.Pages
 
         public void OnPost()
         {
-            
             using (MailMessage mail = new MailMessage())
             {
-                MailAddress MailTo = new MailAddress(Email, "From");
-                mail.From = new MailAddress("lubiekwiatki2020@gmail.com", "Kwiaciarnia");
-                mail.To.Add(MailTo);
+                mail.From = new MailAddress("lubiekwiatki@gmail.com", Name);
+                mail.To.Add(new MailAddress(Email));
                 mail.Subject = Subject;
                 mail.Body = Message;
                 mail.IsBodyHtml = true;
