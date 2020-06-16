@@ -40,7 +40,6 @@ namespace FloweryWaw.Pages
                     smtp.Send(mail);
                     // label1.Text = "Mail sent"
                 }
-
             }
         }
     }
