@@ -128,19 +128,21 @@
        var name = $("input#name").val();
        var email = $("input#email").val();
        var message = $("textarea#message").val();
-       var firstName = name; // For Success/Failure Message
+         var firstName = name; // For Success/Failure Message
+         var token = $("input[name='__RequestVerificationToken']").val();
        // Check for white space in name for Success/Fail message
        if (firstName.indexOf(' ') >= 0) {
          firstName = name.split(' ').slice(0, -1).join(' ');
        }
        $.ajax({
          url: "/",
-         type: "POST",
-         data: {
+           type: "POST",
+           data: {
            name: name,
            email: email,
-           message: message
-         },
+             message: message
+           },
+           headers: { RequestVerificationToken: token},
          cache: false,
          success: function () {
            // Success message

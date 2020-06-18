@@ -36,14 +36,14 @@ namespace FloweryWaw.Pages
 
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(string email, string name, string message)
         {
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress("lubiekwiatki2020@gmail.com", Name);
-                mail.To.Add(new MailAddress(Email));
-                mail.Subject = Subject;
-                mail.Body = Message;
+                mail.From = new MailAddress("lubiekwiatki2020@gmail.com", name);
+                mail.To.Add(new MailAddress(email));
+                mail.Subject = "dziendo";
+                mail.Body = message;
                 mail.IsBodyHtml = true;
                 using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                 {
@@ -56,11 +56,5 @@ namespace FloweryWaw.Pages
             return new ContentResult { Content = ReturningJson, ContentType = "application/json" };
         }
 
-        [HttpPost]
-        [Route("/Newsletter")]
-        public void Newsletter()
-        {
-
-        }
     }
 }
