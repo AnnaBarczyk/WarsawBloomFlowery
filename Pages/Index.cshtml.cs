@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
 
 namespace FloweryWaw.Pages
 {
@@ -20,7 +21,9 @@ namespace FloweryWaw.Pages
         public string Message { get; set; }
         [BindProperty]
         public string Subject { get; set; }
-        
+
+        public static string ReturningJson { get; set; } = "{}";
+
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -33,11 +36,11 @@ namespace FloweryWaw.Pages
 
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress("lubiekwiatki@gmail.com", Name);
+                mail.From = new MailAddress("lubiekwiatki2020@gmail.com", Name);
                 mail.To.Add(new MailAddress(Email));
                 mail.Subject = Subject;
                 mail.Body = Message;
@@ -49,6 +52,15 @@ namespace FloweryWaw.Pages
                     smtp.Send(mail);
                 }
             }
+
+            return new ContentResult { Content = ReturningJson, ContentType = "application/json" };
+        }
+
+        [HttpPost]
+        [Route("/Newsletter")]
+        public void Newsletter()
+        {
+
         }
     }
 }

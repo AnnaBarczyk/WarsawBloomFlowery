@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/FloweryWaw
+/bin/Debug/netcoreapp3.1
+/obj/Debug/netcoreapp3.1/staticwebassets
+/obj/Debug/netcoreapp3.1
+/obj
+/FloweryWaw.sln
