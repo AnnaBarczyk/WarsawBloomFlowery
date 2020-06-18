@@ -80,12 +80,14 @@
        console.log('inside success');
        event.preventDefault(); // prevent default submit behaviour
        var email = $("input#email").val();
+       var token = $("input[name='__RequestVerificationToken']").val();
        $.ajax({
-         url: "../mail/subscribe.php",
+         url: "/Subscribe",
          type: "POST",
          data: {
            email: email
          },
+         headers: { RequestVerificationToken: token},
          cache: false,
          success: function () {
            // Success message
@@ -129,7 +131,7 @@
        var email = $("input#email").val();
        var message = $("textarea#message").val();
          var firstName = name; // For Success/Failure Message
-         var token = $("input[name='__RequestVerificationToken']").val();
+       var token = $("input[name='__RequestVerificationToken']").val();
        // Check for white space in name for Success/Fail message
        if (firstName.indexOf(' ') >= 0) {
          firstName = name.split(' ').slice(0, -1).join(' ');

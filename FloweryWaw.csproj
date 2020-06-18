@@ -111,6 +111,10 @@
     <Content Remove="wwwroot\lib\bootstrap\dist\vendor\masonry.pkgd.min.js" />
     <Content Remove="wwwroot\lib\bootstrap\dist\video\Flower.mp4" />
     <Content Remove="wwwroot\lib\bootstrap\dist\video\Flower.webm" />
+    <Content Update="Pages\Subscribe.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
