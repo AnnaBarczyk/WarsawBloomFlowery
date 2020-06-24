@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Warsaw Bloom</title>
     <!-- Bootstrap Core CSS -->
     <link href="~/lib/bootstrap/dist/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom Fonts -->
@@ -60,7 +60,7 @@
                             </li>
                             <li>
                                 <a class="page-scroll" href="/eng">ENG</a>
-                            </li>                              
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -90,8 +90,55 @@
             @RenderBody()
         </main>
     </div>
-
+    <footer class="footer-block visible-over">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive img-centered" src="~/lib/bootstrap/dist/img/logo2.png" alt="logo">
+                </div>
+                <div class="col-md-3 col-md-offset-1 address">
+                    @*<p>
+                        <i class="fa fa-globe fa-1x" aria-hidden="true"></i>
+                        121 Sunrise Blvd, 3290, Melbourne, Australia
+                    </p>*@
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        +48 605 446 405
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        warsawbloom@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/WARSAWbloom"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/warsaw_bloom/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     @RenderSection("Scripts", required: false)
+
+    <!-- jQuery -->
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/lib/bootstrap/dist/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/masonry.pkgd.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.easing.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.viewportchecker.js"></script>
+    <script src="~/lib/bootstrap/dist/js/jquery.bcSwipe.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="~/lib/bootstrap/dist/js/jqBootstrapValidation.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="~/lib/bootstrap/dist/js/main.js"></script>
 </body>
 </html>
