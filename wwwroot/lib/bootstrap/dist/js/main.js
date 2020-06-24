@@ -79,13 +79,13 @@
      submitSuccess: function ($form, event) {
        console.log('inside success');
        event.preventDefault(); // prevent default submit behaviour
-       var email = $("input#email").val();
+       var emailSub = $("input#emailSub").val();
        var token = $("input[name='__RequestVerificationToken']").val();
        $.ajax({
          url: "/Subscribe",
          type: "POST",
          data: {
-           email: email
+           emailSub: emailSub
          },
          headers: { RequestVerificationToken: token},
          cache: false,

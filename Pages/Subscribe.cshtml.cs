@@ -17,14 +17,14 @@ namespace FloweryWaw.Pages
             
         }
         
-        public IActionResult OnPost(string email)
+        public IActionResult OnPost(string emailSub)
         {
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress("lubiekwiatki2020@gmail.com");
-                mail.To.Add(new MailAddress(email));
+                mail.From = new MailAddress(emailSub);
+                mail.To.Add(new MailAddress("lubiekwiatki2020@gmail.com"));
                 mail.Subject = "New user wants to subscribe!";
-                mail.Body = "Add me to your mailing list: " + email;
+                mail.Body = "Add me to your mailing list: " + emailSub;
                 mail.IsBodyHtml = true;
                 using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                 {
