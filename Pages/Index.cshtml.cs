@@ -40,7 +40,7 @@ namespace FloweryWaw.Pages
         {
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress(email + name);
+                mail.From = new MailAddress(email, name);
                 mail.To.Add(new MailAddress("lubiekwiatki2020@gmail.com"));
                 mail.Subject = "New email from user: " + name;
                 mail.Body = message;
