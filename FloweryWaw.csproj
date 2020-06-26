@@ -2,13 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e2c3e6a0-bc65-40b3-b8be-e6465c21d1be</UserSecretsId>
   </PropertyGroup>
 
 	<ItemGroup>
 		<None Include="wwwroot\*" />
 	</ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot*" />
+  </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.AzureKeyVault.HostingStartup" Version="2.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
