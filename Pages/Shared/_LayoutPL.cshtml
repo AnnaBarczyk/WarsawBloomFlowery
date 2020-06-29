@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Warsaw Bloom</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/lib/bootstrap/dist/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="~/lib/bootstrap/dist/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="~/lib/bootstrap/dist/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand navbar-brand2 page-scroll" href="#page-top">
+                        <img class="img-responsive img-centered" src="~/lib/bootstrap/dist/img/logo1.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#blog">Projekty</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#about">O nas</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#team">Nasz zespół</a>
+                            </li>
+                            <li class="logo">
+                                <a class="navbar-brand page-scroll" href="#page-top">
+                                    <img class="img-responsive img-centered" src="~/lib/bootstrap/dist/img/logo1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services">Usługi</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Kontakt</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" asp-page="./IndexENG">ENG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item carusel1 active"></div>
+                <div class="item carusel2"></div>
+                <div class="item carusel3"></div>
+                <div class="item carusel4"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer-block visible-over">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive img-centered" src="~/lib/bootstrap/dist/img/logo2.png" alt="logo">
+                </div>
+                <div class="col-md-3 col-md-offset-1 address">
+                    @*<p>
+                        <i class="fa fa-globe fa-1x" aria-hidden="true"></i>
+                        121 Sunrise Blvd, 3290, Melbourne, Australia
+                    </p>*@
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        +48 605 446 405
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        warsawbloom@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/WARSAWbloom"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/warsaw_bloom/"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+
+    <!-- jQuery -->
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/lib/bootstrap/dist/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/masonry.pkgd.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.easing.min.js"></script>
+    <script src="~/lib/bootstrap/dist/vendor/jquery/jquery.viewportchecker.js"></script>
+    <script src="~/lib/bootstrap/dist/js/jquery.bcSwipe.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="~/lib/bootstrap/dist/js/jqBootstrapValidation.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="~/lib/bootstrap/dist/js/main.js"></script>
+</body>
+</html>
