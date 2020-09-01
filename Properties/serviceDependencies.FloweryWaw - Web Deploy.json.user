@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2020-06-24T14:06:59.6040288Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "FloweryWawResourceGroup01"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "f6e55a43-b273-4d8f-8d86-89dc041792cf"
+    }
+  }
+}
