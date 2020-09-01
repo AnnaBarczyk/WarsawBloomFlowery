@@ -421,7 +421,7 @@ header {
   background-size: cover !important;
 }
     .carousel-inner .carusel4 {
-        background: url("../img/flowers-2044789_1920.jpg") no-repeat center top;
+        background: url("../img/naksiazce.jpg") no-repeat center top;
     }
     .carousel-inner .carusel3 {
         background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
@@ -562,7 +562,7 @@ header {
   background-image: url('../img/team/girl-657753_1280.jpg');
 }
 #team .team-image-cell .team-cell2 {
-  background-image: url('../img/team/model-2373537_1280.jpg');
+  background-image: url('../img/team/bekon.jpg');
 }
 #team .team-image-cell .team-cell3 {
   background-image: url('../img/team/secretary-1379839_1280.jpg');
@@ -615,7 +615,7 @@ header {
 #services .service-image-container .service-image1 {
   height: 53%;
   width: 77%;
-  background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
+  background: url("../img/IMG_1349.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 3%;
@@ -627,7 +627,7 @@ header {
 #services .service-image-container .service-image2 {
   height: 53%;
   width: 77%;
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
+  background: url("../img/IMG_1598.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 40%;
