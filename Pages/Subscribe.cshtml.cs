@@ -1,22 +1,22 @@
-﻿using System.Net;
-using System.Net.Mail;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Net;
+using System.Net.Mail;
 
 namespace FloweryWaw.Pages
 {
     public class Subscribe : PageModel
     {
         public static string ReturningJson { get; set; } = "{}";
-        
+
         [BindProperty]
         public string Name { get; set; }
-        
+
         public void OnGet()
         {
-            
+
         }
-        
+
         public IActionResult OnPost(string emailSub)
         {
             using (MailMessage mail = new MailMessage())
