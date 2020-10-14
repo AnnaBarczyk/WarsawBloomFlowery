@@ -2,13 +2,13 @@
 ![img](https://i.imgur.com/9bSRrxi.png)
 ![img](https://i.imgur.com/mzZagYX.png)
 
-Website made for WarsawBloom flowery.
+<br/>Website made for WarsawBloom flowery.
 
 ## Technologies
--C#
--ASP.NET.CORE
--Bootstrap template
--HTML, CSS
+-C#<br/>
+-ASP.NET.CORE<br/>
+-Bootstrap template<br/>
+-HTML, CSS<br/>
 
 ## Status
 
