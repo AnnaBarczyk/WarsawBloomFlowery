@@ -5,10 +5,8 @@
 <br/>Website made for WarsawBloom flowery.<br/>
 [Click here to see the site](https://warsawbloom.hostingasp.pl/)
 ## Technologies
--C#<br/>
--ASP.NET.CORE<br/>
--Bootstrap template<br/>
--HTML, CSS<br/>
+
+ Backend done in .NET Framework using C#. Frontend based on Bootstrap template.
 
 ## Status
 
