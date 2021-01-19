@@ -489,12 +489,12 @@ header {
   height: 100%;
   right: 0;
 }
-#blog .blog-image-cell .blog-image {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
+    #blog .blog-image-cell .blog-image {
+        background: url("../img/rsz_img_1202.jpg") no-repeat center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
 /* ------END LATEST PROJECT----------- */
 /* ------6. START OUR STORY----------- */
 #about {
@@ -801,9 +801,9 @@ header {
   background-image: url('../img/basket-1846135_1920.jpg');
   background-position: center center;
 }
-#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell3 {
-  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
-}
+    #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell3 {
+        background-image: url('../img/rsz_img_1196.jpg');
+    }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell4 {
   background-image: url('../img/flowers-2044789_1920.jpg');
 }
