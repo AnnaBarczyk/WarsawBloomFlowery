@@ -3,7 +3,7 @@
 ![img](https://i.imgur.com/mzZagYX.png)
 
 <br/>Website made for WarsawBloom flowery.<br/>
-[Click here to see the site](https://barczyk.hostingasp.pl/)
+[Click here to see the site](https://warsawbloom.com)
 ## Technologies
 
  Backend done in .NET Framework using C#. Frontend based on Bootstrap template.
